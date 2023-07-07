@@ -20,11 +20,7 @@ end
 
 def add_element(array)
   # add an element (of any value) to the array
-  if array.empty?
-    array << 1
-  else
-    array << array.last + 1
-  end
+  array.empty? ? array << 1 : array << array.last + 1
 end
 
 def remove_last_element(array)
